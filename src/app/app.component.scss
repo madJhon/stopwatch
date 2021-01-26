@@ -1,0 +1,22 @@
+.wrapper {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.stopwatch {
+  &__timer {
+    text-align: center;
+    font-size: 50px;
+  }
+  &__actions {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.button {
+  font-size: 25px;
+  width: 100px;
+  cursor: pointer;
+}

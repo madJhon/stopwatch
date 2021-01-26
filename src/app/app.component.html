@@ -1,0 +1,11 @@
+<div class="wrapper">
+  <div class="stopwatch">
+    <h1 class="stopwatch__timer">{{timer}}</h1>
+    <div class="stopwatch__actions">
+      <button class="button" (click)="startTimer()" *ngIf="!isRunning || isWaiting">Start</button>
+      <button class="button" (click)="stopTimer()"  *ngIf="isRunning && !isWaiting">Stop</button>
+      <button class="button" #wait [disabled]="isWaiting">Wait</button>
+      <button class="button" (click)="resetTimer()">Reset</button>
+    </div>
+  </div>
+</div>
