@@ -5,6 +5,7 @@
   "projects": {
     "stopwatch": {
       "projectType": "application",
+
       "schematics": {
         "@schematics/angular:component": {
           "styleext": "scss"
@@ -28,8 +29,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
-            ],
+              "src/styles.scss"],
             "scripts": []
           },
           "configurations": {

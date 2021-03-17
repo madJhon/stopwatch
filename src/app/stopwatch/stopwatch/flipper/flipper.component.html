@@ -1,0 +1,13 @@
+<div class="flipper" [class.flipping]="isNew">
+  <div class="gear"></div>
+  <div class="gear"></div>
+  <div class="top">
+    <div class="text">{{ value }}</div>
+  </div>
+  <div class="top new" *ngIf="isNew">
+    <div class="text">{{ value }}</div>
+  </div>
+  <div class="bottom">
+    <div class="text">{{ value }}</div>
+  </div>
+</div>

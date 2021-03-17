@@ -1,6 +1,19 @@
+::ng-deep :root {
+  --bgcolor: rgb(38, 37, 41);
+  --clockheight: 220px;
+  --radius: 30px;
+  --rotationtime: 0.55s;
+  --avobg: rgb(227, 246, 104);
+}
+
 .wrapper {
-  width: 500px;
-  margin: 0 auto;
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
 }
 
 .stopwatch {
@@ -15,8 +28,22 @@
   }
 }
 
+.actions {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
 .button {
   font-size: 25px;
   width: 100px;
   cursor: pointer;
+  margin-right: 20px;
+  color: white;
+  padding: 5px 10px;
+  background-color: var( --bgcolor);
+}
+
+.button--read {
+  background-color: red;
 }
